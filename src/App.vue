@@ -13,6 +13,7 @@
             <v-text-field v-model="person.address.city" label="City" />
             <v-text-field v-model="person.address.country" label="Country" />
 
+            <!-- ref for buttons https://vuetifyjs.com/en/components/buttons/#ripple-->
             <div class="text-subtitle-1 mt-4 mb-2">Children</div>
             <v-btn color="success" variant="flat" @click="addChild">Add Child</v-btn>
             <!-- v-for repeats it for each entry -->
@@ -21,12 +22,14 @@
               <v-text-field v-model="child.lastName" label="Last Name" />
               <v-btn color="error" variant="flat" @click="removeChild(index)">Remove Child</v-btn>
             </div>
-
-            <!-- saving to console... hopefully -->
-            <v-btn color="primary" variant="flat" @click="savePerson">Save</v-btn>
           </v-card-text>
+          <v-card-actions class="justify-center">
+            <!-- saving to console... hopefully -->
+            <v-btn color="primary" variant="elevated" @click="savePerson">Save</v-btn>
+          </v-card-actions>
         </v-card>
 
+        <!-- snackbar is a popup message - https://vuetifyjs.com/en/components/snackbars/#prepend-icon-->
         <v-snackbar v-model="showSavedMessage" :timeout="3000">
           Person saved — see the browser console for the JSON payload.
         </v-snackbar>
