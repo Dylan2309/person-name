@@ -5,8 +5,8 @@
         <v-card >
           <v-card-title>Person Details</v-card-title>
           <v-card-text>
-            <v-field v-model="person.firstName" label="First Name" />
-            <v-field v-model="person.lastName" label="Last Name" />
+            <v-text-field v-model="person.firstName" label="First Name" />
+            <v-text-field v-model="person.lastName" label="Last Name" />
 
             <div>Address</div>
             <v-text-field v-model="person.address.street" label="Street" />
