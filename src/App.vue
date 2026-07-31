@@ -40,7 +40,7 @@
   import { createEmptyPerson } from './types/person';
   const person = reactive(createEmptyPerson());
   // is the popup visible?
-  const showSaveMessage = ref(false);
+  const showSavedMessage = ref(false);
 
   function addChild(): void {
     person.children.push({firstName: '', lastName: ''});
