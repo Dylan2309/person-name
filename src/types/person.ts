@@ -7,7 +7,7 @@ export interface Child {
     lastName: string;
 }
 
-// adress nested inside "person"
+// adress to be nested inside "person"
 export interface Address {
     street: string;
     city: string;
