@@ -8,22 +8,22 @@
             <v-text-field v-model="person.firstName" label="First Name" />
             <v-text-field v-model="person.lastName" label="Last Name" />
 
-            <div>Address</div>
+            <div class="text-subtitle-1 mt-4 mb-2">Address</div>
             <v-text-field v-model="person.address.street" label="Street" />
             <v-text-field v-model="person.address.city" label="City" />
             <v-text-field v-model="person.address.country" label="Country" />
 
-            <div>Children</div>
-            <v-btn @click="addChild">Add Child</v-btn>
+            <div class="text-subtitle-1 mt-4 mb-2">Children</div>
+            <v-btn color="success" variant="flat" @click="addChild">Add Child</v-btn>
             <!-- v-for repeats it for each entry -->
             <div v-for="(child, index) in person.children" :key="index">
               <v-text-field v-model="child.firstName" label="First Name" />
               <v-text-field v-model="child.lastName" label="Last Name" />
-              <v-btn @click="removeChild(index)">Remove Child</v-btn>
+              <v-btn color="error" variant="flat" @click="removeChild(index)">Remove Child</v-btn>
             </div>
 
             <!-- saving to console... hopefully -->
-            <v-btn @click="savePerson">Save</v-btn>
+            <v-btn color="primary" variant="flat" @click="savePerson">Save</v-btn>
           </v-card-text>
         </v-card>
 
