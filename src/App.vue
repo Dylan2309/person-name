@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-main>
+    <v-main class="bg-grey-lighten-4">
       <v-container style="max-width: 640px">
         <v-card >
           <v-card-title>Person Details</v-card-title>
@@ -25,7 +25,7 @@
           </v-card-text>
           <v-card-actions class="justify-center">
             <!-- saving to console... hopefully -->
-            <v-btn color="primary" variant="elevated" @click="savePerson">Save</v-btn>
+            <v-btn color="primary" variant="elevated" size="large" block @click="savePerson">Save</v-btn>
           </v-card-actions>
         </v-card>
 
