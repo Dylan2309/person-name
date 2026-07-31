@@ -11,7 +11,7 @@
             <div>Address</div>
             <v-text-field v-model="person.address.street" label="Street" />
             <v-text-field v-model="person.address.city" label="City" />
-            <v-text-field v-model="person.address.city" label="Country" />
+            <v-text-field v-model="person.address.country" label="Country" />
 
             <div>Children</div>
             <v-btn @click="addChild">Add Child</v-btn>
