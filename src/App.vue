@@ -26,6 +26,10 @@
             <v-btn @click="savePerson">Save</v-btn>
           </v-card-text>
         </v-card>
+
+        <v-snackbar v-model="showSavedMessage" :timeout="3000">
+          Person saved — see the browser console for the JSON payload.
+        </v-snackbar>
       </v-container>
     </v-main>
   </v-app>
